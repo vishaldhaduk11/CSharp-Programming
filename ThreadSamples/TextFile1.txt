@@ -1,0 +1,21 @@
+﻿CTRL+W, S: S olution Explorer
+CTRL+W, E: E rror list
+CTRL+W, R: R esourceview
+CTRL+W, A: Command window (A ction ...)
+CTRL+W, T: T askview
+CTRL+W, Q: Find Symbol Results
+CTRL+W, X: Toolbo x
+CTRL+W, C: C lassview
+CTRL+W, P: P roperties
+CTRL+W, B: B ookmarks
+
+Scott gu's blog. Visual studio tips and tricks.
+http://weblogs.asp.net/scottgu/search-and-navigation-tips-tricks-with-visual-studio
+
+Visual studio shotrcuts
+http://visualstudioshortcuts.com/2013/
+
+Thread.Sleep explaination, pros and cons.
+http://stackoverflow.com/questions/8815895/why-is-thread-sleep-so-harmful
+http://www.albahari.com/threading/part2.aspx#_Signaling_with_Event_Wait_Handles
+http://blogs.msmvps.com/peterritchie/2007/04/26/thread-sleep-is-a-sign-of-a-poorly-designed-program/
