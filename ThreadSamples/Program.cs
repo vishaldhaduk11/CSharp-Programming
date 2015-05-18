@@ -10,8 +10,10 @@ namespace ThreadSamples
     {
         static void Main(string[] args)
         {
+            ThreadBasic.CallAggregateException();
+
             //Thread Static
-            ThreadBasic.CallThreadStatic();
+            //ThreadBasic.CallThreadStatic();
 
             //Stopping thread
             //ThreadBasic.CallStopThread();

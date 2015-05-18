@@ -178,5 +178,30 @@ namespace ThreadSamples.AppCore
         }
 
         #endregion
+
+        #region temp
+        internal static void CallAggregateException()
+        {
+            var number = Enumerable.Range(0, 20);
+
+            try
+            {
+                var parallel = number.AsParallel()
+                    .Where(i => isEven(i));
+
+                parallel.ForAll(e => Console.WriteLine(e));
+            }
+            catch (AggregateException ex)
+            {
+                Console.WriteLine("Number of exception {0}", ex.InnerExceptions.Count());
+            }
+        }
+        private static bool isEven(int i)
+        {
+            if (i % 10 == 0) throw new Exception("i");
+
+            return i % 2 == 0;
+        }
+        #endregion
     }
 }
