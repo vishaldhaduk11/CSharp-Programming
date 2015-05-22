@@ -26,7 +26,9 @@ namespace MaliciousFileProcessor
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            FileHelper fh = new FileHelper();
 
+            fh.ReadFilters("");
         }
     }
 }
