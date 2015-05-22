@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsExample", "GenericsExample\GenericsExample.csproj", "{21A37F2F-D12B-42FC-8598-C07051B66D45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSamples", "ThreadSamples\ThreadSamples.csproj", "{E86442F4-7D4C-45B1-A4BA-C4AE697F0D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaliciousFileProcessor", "MaliciousFileProcessor\MaliciousFileProcessor.csproj", "{6C8BEA06-24A7-4418-90F9-F1196404C17F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{E86442F4-7D4C-45B1-A4BA-C4AE697F0D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86442F4-7D4C-45B1-A4BA-C4AE697F0D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86442F4-7D4C-45B1-A4BA-C4AE697F0D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
