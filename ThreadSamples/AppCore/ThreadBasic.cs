@@ -13,6 +13,15 @@ namespace ThreadSamples.AppCore
         #region Fields
         [ThreadStatic]
         public static int filed;
+
+
+        /// <summary>
+        /// Thread Local
+        /// </summary>
+        public static ThreadLocal<int> _filed = new ThreadLocal<int>(() =>
+            {
+                return Thread.CurrentThread.ManagedThreadId;
+            });
         #endregion
 
         #region WorkerThreads
@@ -177,30 +186,24 @@ namespace ThreadSamples.AppCore
 
         }
 
-        #endregion
-
-        #region temp
-        internal static void CallAggregateException()
+        internal static void CallThreadLocal()
         {
-            var number = Enumerable.Range(0, 20);
+            new Thread(() =>
+                {
+                    for (int i = 0; i < _filed.Value; i++)
+                    {
+                        Console.WriteLine("Thread A {0}", i);
 
-            try
+                    }
+                }).Start();
+
+            new Thread(() =>
             {
-                var parallel = number.AsParallel()
-                    .Where(i => isEven(i));
-
-                parallel.ForAll(e => Console.WriteLine(e));
-            }
-            catch (AggregateException ex)
-            {
-                Console.WriteLine("Number of exception {0}", ex.InnerExceptions.Count());
-            }
-        }
-        private static bool isEven(int i)
-        {
-            if (i % 10 == 0) throw new Exception("i");
-
-            return i % 2 == 0;
+                for (int i = 0; i < _filed.Value; i++)
+                {
+                    Console.WriteLine("Thread B {0}", i);
+                }
+            }).Start();
         }
         #endregion
     }
