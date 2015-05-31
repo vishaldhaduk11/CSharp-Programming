@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSamples", "ThreadSamp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaliciousFileProcessor", "MaliciousFileProcessor\MaliciousFileProcessor.csproj", "{6C8BEA06-24A7-4418-90F9-F1196404C17F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityMaster", "UtilityMaster\UtilityMaster.csproj", "{599D2D43-52ED-464C-933E-92146F2272D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C8BEA06-24A7-4418-90F9-F1196404C17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599D2D43-52ED-464C-933E-92146F2272D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599D2D43-52ED-464C-933E-92146F2272D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599D2D43-52ED-464C-933E-92146F2272D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599D2D43-52ED-464C-933E-92146F2272D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
