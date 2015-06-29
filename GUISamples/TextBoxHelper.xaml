@@ -1,0 +1,9 @@
+﻿<Window x:Class="GUISamples.TextBoxHelper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextBoxHelper" Height="300" Width="300">
+    <Grid>
+        <Label Name="LabelTest" Content="Abc" Width="200" Height="30" BorderBrush="Red" BorderThickness="2" VerticalAlignment="Top" Margin="10,10,82,0" />
+        
+    </Grid>
+</Window>
