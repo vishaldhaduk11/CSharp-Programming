@@ -22,7 +22,13 @@ namespace GUISamples
         public TextBoxHelper()
         {
             InitializeComponent();
-            LabelTest.Content = "Content from code behind";
+            //LabelTest.Content = "Content from code behind";
+        }
+
+        private void TextSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var value = (TextBox)sender;
+            LabelTest.Content = value.Text;
         }
 
     }
